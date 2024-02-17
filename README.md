@@ -25,10 +25,10 @@ send/receive money (ether/wei).</br>
 <br>Keep a contract balance.</br>
 <br></br>
 ##### State Variables: 
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;**Participants:** maximum of 9, each participant identified with an address and has a balance</br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp; **Taxi Driver:** 1 taxi driver and salary</br>
+<br></br>
+&nbsp;&nbsp;&nbsp;&nbsp;**Participants:** maximum of 9, each participant identified with an address and has a balance
+<br></br>
+&nbsp;&nbsp;&nbsp;&nbsp; **Taxi Driver:** 1 taxi driver and salary
 <br></br>
 &nbsp;&nbsp;&nbsp;&nbsp; **Car Dealer:** An identity to buy/sell car, also handles maintenance and tax
 <br></br>
@@ -50,7 +50,7 @@ car id), price, offer valid time, and approval state} information.
 <br></br>
 &nbsp;&nbsp;&nbsp;&nbsp; **Time handles** 
 <br></br>
-<br></br>
+
 ##### Functions: 
 <br></br>
 &nbsp;&nbsp;&nbsp;&nbsp; **Constructor:** <br></br>
