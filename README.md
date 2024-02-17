@@ -24,11 +24,10 @@ send/receive money (ether/wei).</br>
 
 <br>Keep a contract balance.</br>
 ### State Variables: 
-<br></br>
 &nbsp;&nbsp;&nbsp;&nbsp;**Participants:** maximum of 9, each participant identified with an address and has a balance
-<br></br>
+</br>
 &nbsp;&nbsp;&nbsp;&nbsp; **Taxi Driver:** 1 taxi driver and salary
-<br></br>
+</br>
 &nbsp;&nbsp;&nbsp;&nbsp; **Car Dealer:** An identity to buy/sell car, also handles maintenance and tax
 <br></br>
 &nbsp;&nbsp;&nbsp;&nbsp; **Contract balance:** Current total money in the contract that has not been distributed
