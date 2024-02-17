@@ -126,7 +126,6 @@ be send to his/her address.
 </br>
 &nbsp;&nbsp;&nbsp;&nbsp; **Fallback Function:** </br></br>
 #### A note on car buying/selling process:
-</br>
 First dealer calls “CarProposeToBusiness”. Participants vote to approve the proposed car through
 “ApprovePurchaseCar”. If the approval state is approved by more than half of the participants function calls
 “PurchaseCar”.
