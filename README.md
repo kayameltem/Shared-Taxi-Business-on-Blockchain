@@ -23,8 +23,7 @@ balance for individuals, and update the balances internally but when above funct
 send/receive money (ether/wei).</br>
 
 <br>Keep a contract balance.</br>
-<br></br>
-##### State Variables: 
+### State Variables: 
 <br></br>
 &nbsp;&nbsp;&nbsp;&nbsp;**Participants:** maximum of 9, each participant identified with an address and has a balance
 <br></br>
@@ -50,9 +49,7 @@ car id), price, offer valid time, and approval state} information.
 <br></br>
 &nbsp;&nbsp;&nbsp;&nbsp; **Time handles** 
 <br></br>
-
-##### Functions: 
-<br></br>
+### Functions: 
 &nbsp;&nbsp;&nbsp;&nbsp; **Constructor:** <br></br>
 Called by owner of the contract and sets initial values for state variables (like CarDealer)
 <br></br>
