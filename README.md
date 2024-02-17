@@ -49,83 +49,83 @@ car id), price, offer valid time, and approval state} information.
 &nbsp;&nbsp;&nbsp;&nbsp; **Time handles** 
 </br>
 ### Functions: 
-&nbsp;&nbsp;&nbsp;&nbsp; **Constructor:** <br></br>
+&nbsp;&nbsp;&nbsp;&nbsp; **Constructor:** </br>
 Called by owner of the contract and sets initial values for state variables (like CarDealer)
 </br>
-&nbsp;&nbsp;&nbsp;&nbsp; **Join function:** <br></br>
+&nbsp;&nbsp;&nbsp;&nbsp; **Join function:** </br>
 Public, Called by participants, Participants needs to pay the participation fee set in the contract to be a
 member in the taxi investment
 </br>
-&nbsp;&nbsp;&nbsp;&nbsp; **CarProposeToBusiness:** <br></br>
+&nbsp;&nbsp;&nbsp;&nbsp; **CarProposeToBusiness:** </br>
 Only CarDealer can call this, sets Proposed Car values, such as CarID, price, offer valid time and
 approval state (to 0)
 </br>
-&nbsp;&nbsp;&nbsp;&nbsp; **ApprovePurchaseCar:** <br></br>
+&nbsp;&nbsp;&nbsp;&nbsp; **ApprovePurchaseCar:** </br>
 Participants can call this function, approves the Proposed Purchase with incrementing the approval
 state. Each participant can increment once. When the majority of participants approve, calls PurschaseCar
 function
 </br>
-&nbsp;&nbsp;&nbsp;&nbsp;**PurchaseCar:**<br></br>
+&nbsp;&nbsp;&nbsp;&nbsp; **PurchaseCar:** </br>
 Sends the CarDealer the price of the proposed car if the offer valid time is not passed yet
 </br>
-&nbsp;&nbsp;&nbsp;&nbsp; **RepurchaseCarPropose:** <br></br>
+&nbsp;&nbsp;&nbsp;&nbsp; **RepurchaseCarPropose:** </br>
 Only CarDealer can call this, sets Proposed Purchase values, such as CarID, price, offer valid time and
 approval state (to 0)
 </br>
-&nbsp;&nbsp;&nbsp;&nbsp; **ApproveSellProposal:** <br></br>
+&nbsp;&nbsp;&nbsp;&nbsp; **ApproveSellProposal:** </br>
 Participants can call this function, approves the Proposed Sell with incrementing the approval state.
 Each participant can increment once. When the majority of participants approve, calls Repurchasecar function
 </br>
-&nbsp;&nbsp;&nbsp;&nbsp; **Repurchasecar:** <br></br>
+&nbsp;&nbsp;&nbsp;&nbsp; **Repurchasecar:** </br>
 Sends the proposed car price to contract if the offer valid time is not passed yet
 </br>
-&nbsp;&nbsp;&nbsp;&nbsp; **ProposeDriver:** <br></br>
+&nbsp;&nbsp;&nbsp;&nbsp; **ProposeDriver:** </br>
 Caller proposes himself/herself as driver and sets his/her address, and expected salary. Only one
 proposed driver can be set,
 </br>
-&nbsp;&nbsp;&nbsp;&nbsp; **ApproveDriver:** <br></br>
+&nbsp;&nbsp;&nbsp;&nbsp; **ApproveDriver:** </br>
 Participants can call this function, approves the Proposed Driver with incrementing the approval state.
 Each participant can increment once. When the majority of participants approve, calls SetDriver function
 </br>
-&nbsp;&nbsp;&nbsp;&nbsp; **SetDriver:** <br></br>
+&nbsp;&nbsp;&nbsp;&nbsp; **SetDriver:** </br>
 Sets the Driver info if approval state is approved by more than half of the participants. Clears proposed
 driver info
 </br>
-&nbsp;&nbsp;&nbsp;&nbsp; **ProposeFireDriver:** <br></br>
+&nbsp;&nbsp;&nbsp;&nbsp; **ProposeFireDriver:** </br>
 Participants can call this function, approves firing driver with incrementing the approval state. Each
 participant can increment once. When the majority of participants approve, calls Fire Driver function
 </br>
-&nbsp;&nbsp;&nbsp;&nbsp; **FireDriver:** <br></br>
+&nbsp;&nbsp;&nbsp;&nbsp; **FireDriver:** </br>
 Sends any amount of money of the current driver’s account to Driver’s address. Clears the driver info
 </br>
-&nbsp;&nbsp;&nbsp;&nbsp; **LeaveJob:** <br></br>
+&nbsp;&nbsp;&nbsp;&nbsp; **LeaveJob:** </br>
 Only Driver can call this function, calls FireDriver function
 </br>
-&nbsp;&nbsp;&nbsp;&nbsp; **GetCharge:** <br></br>
+&nbsp;&nbsp;&nbsp;&nbsp; **GetCharge:** </br>
 Public, customers who use the taxi pays their ticket through this function. Charge is sent to contract.
 Takes no parameter. See slides 6 page 11.
 </br>
-&nbsp;&nbsp;&nbsp;&nbsp; **GetSalary:** <br></br>
+&nbsp;&nbsp;&nbsp;&nbsp; **GetSalary:** </br>
 Only Driver can call this function, releases the salary of the Driver to his/her account monthly. Make
 sure it is not being called more than once in a month. If there is any money in Driver’s account, it will be send to
 his/her address.
 </br>
-&nbsp;&nbsp;&nbsp;&nbsp; **CarExpenses:** <br></br>
+&nbsp;&nbsp;&nbsp;&nbsp; **CarExpenses:** </br>
 Only one of the participants can initiate this function, sends the CarDealer the price of the expenses
 every 6 month. Make sure it is not being called more than once in the last 6 months. 
 </br>
-&nbsp;&nbsp;&nbsp;&nbsp; **PayDividend:** <br></br>
+&nbsp;&nbsp;&nbsp;&nbsp; **PayDividend:** </br>
 Only one of the participants can initiate this function, calculates the total profit after expenses and
 Driver salaries, calculates the profit per participant and releases this amount to participants in every 6 month.
 Make sure it is not being called more than once in the last 6 months. This does NOT send money directly, but
 only updates the balance on the contract and participants.
 </br>
-&nbsp;&nbsp;&nbsp;&nbsp; **GetDividend:** <br></br>
+&nbsp;&nbsp;&nbsp;&nbsp; **GetDividend:** </br>
 Only Participants can call this function, if there is any money in the calling participants’ account, it will
 be send to his/her address.
 </br>
-&nbsp;&nbsp;&nbsp;&nbsp; **Fallback Function:** <br></br><br></br>
-##### A note on car buying/selling process:
+&nbsp;&nbsp;&nbsp;&nbsp; **Fallback Function:** </br></br>
+#### A note on car buying/selling process:
 </br>
 First dealer calls “CarProposeToBusiness”. Participants vote to approve the proposed car through
 “ApprovePurchaseCar”. If the approval state is approved by more than half of the participants function calls
