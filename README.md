@@ -26,7 +26,7 @@ Keep a contract balance.
 <br><br>
 ##### State Variables: 
 <br>
-&nbsp;&nbsp;&nbsp;&nbsp; **Participants:** maximum of 9, each participant identified with an address and has a balance
+<ul> **Participants:** maximum of 9, each participant identified with an address and has a balance</ul>
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp; **Taxi Driver:** 1 taxi driver and salary
 <br>
