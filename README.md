@@ -10,20 +10,20 @@ They decided to combine their money and buy a car which will be used as a taxi a
 among participants every month. However, one problem is that they have no trust in each other.
 To make this investment work, you are asked to write a smart contract that will handle the transactions. The
 contract will run on Ethereum network.
-</br></br>
-To make this investment work, you are asked to write a smart contract that will handle the transactions. The
-contract will run on Ethereum network.
-</br></br>
-The contract should **at least include** below. If you need to extend the state variables and functions, you are free to
+
+<br>To make this investment work, you are asked to write a smart contract that will handle the transactions. The
+contract will run on Ethereum network.</br>
+
+<br>The contract should **at least include** below. If you need to extend the state variables and functions, you are free to
 do so as long as they are necessary. For function parameters try to write functions as few parameters as possible,
-none preferred if possible.
-For the functions that send and receive money, like join, purchasecar, sellcar, getchargei getsalary, carexpenses,
+none preferred if possible.</br>
+<br>For the functions that send and receive money, like join, purchasecar, sellcar, getchargei getsalary, carexpenses,
 getdividend should send/transfer the amount to the address that it supposed to. you can keep a mapping for the
 balance for individuals, and update the balances internally but when above functions called, you need to actually
-send/receive money (ether/wei).
-<br></br>
-Keep a contract balance.
-<br></br<br>></br>
+send/receive money (ether/wei).</br>
+
+<br>Keep a contract balance.</br>
+<br></br
 ##### State Variables: 
 <br></br>
 &nbsp;&nbsp;&nbsp;&nbsp;**Participants:** maximum of 9, each participant identified with an address and has a balance
