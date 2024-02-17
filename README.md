@@ -1,7 +1,7 @@
 # Shared-Taxi-Business-on-Blockchain
-Imagine a group of people in the same neighborhood who would like to invest into an asset. A smart contract that handles a common asset and distribution of income generated from this asset in certain time intervals. The common asset in this scenario is a taxi. 
+<br>Imagine a group of people in the same neighborhood who would like to invest into an asset. A smart contract that handles a common asset and distribution of income generated from this asset in certain time intervals. The common asset in this scenario is a taxi. </br>
 
-In this project you are asked to create a smart contract that handles a common asset and distribution of income
+<br>In this project you are asked to create a smart contract that handles a common asset and distribution of income
 generated from this asset in certain time intervals. The common asset in this scenario is a taxi.
 Imagine a group of people in the same neighborhood who would like to invest into an asset. They cannot invest
 individually because each person has a very small amount of money, thus they can combine their holdings together
@@ -9,7 +9,7 @@ to invest into a bigger and more profitable investment.
 They decided to combine their money and buy a car which will be used as a taxi and the profit will be shared
 among participants every month. However, one problem is that they have no trust in each other.
 To make this investment work, you are asked to write a smart contract that will handle the transactions. The
-contract will run on Ethereum network.
+contract will run on Ethereum network.</br>
 
 <br>To make this investment work, you are asked to write a smart contract that will handle the transactions. The
 contract will run on Ethereum network.</br>
@@ -23,12 +23,12 @@ balance for individuals, and update the balances internally but when above funct
 send/receive money (ether/wei).</br>
 
 <br>Keep a contract balance.</br>
-<br></br
+<br></br>
 ##### State Variables: 
-<br></br>
-&nbsp;&nbsp;&nbsp;&nbsp;**Participants:** maximum of 9, each participant identified with an address and has a balance
-<br></br>
-&nbsp;&nbsp;&nbsp;&nbsp; **Taxi Driver:** 1 taxi driver and salary
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;**Participants:** maximum of 9, each participant identified with an address and has a balance</br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; **Taxi Driver:** 1 taxi driver and salary</br>
 <br></br>
 &nbsp;&nbsp;&nbsp;&nbsp; **Car Dealer:** An identity to buy/sell car, also handles maintenance and tax
 <br></br>
